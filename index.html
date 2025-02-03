@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header with Navigation & Theme Toggle -->
+    <header>
+      <div class="logo">
+        <a
+          href="#hero"
+          style="
+            text-decoration: none;
+            color: inherit;
+            font-family: 'Montserrat', sans-serif;
+          "
+          >MyPortfolio</a
+        >
+      </div>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+        <img src="images/brightness.png" alt="Toggle Theme" />
+      </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Hello, I'm [Your Name]</h1>
+      <p>
+        I am a passionate developer and designer crafting modern and
+        minimalistic digital experiences.
+      </p>
+      <!-- Download Resume Button -->
+      <a
+        class="btn"
+        href="Resume_of_Md_Abu_Bakar_Siddique_Sadi.pdf"
+        download="Resume_of_Md_Abu_Bakar_Siddique_Sadi.pdf"
+        >Download Resume</a
+      >
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I specialize in building responsive, user-friendly websites with a focus
+        on clean design and intuitive user experiences. With expertise in HTML,
+        CSS, and JavaScript, I bring ideas to life and deliver high-quality
+        digital solutions.
+      </p>
+      <!-- Tech Stack Logos -->
+      <div class="tech-stack">
+        <img
+          src="images/html.svg"
+          alt="HTML5"
+          class="tech-item"
+          title="HTML5"
+        />
+        <img src="images/css.svg" alt="CSS3" class="tech-item" title="CSS3" />
+        <img
+          src="images/javascript.svg"
+          alt="JavaScript"
+          class="tech-item"
+          title="JavaScript"
+        />
+        <img
+          src="images/react.svg"
+          alt="React"
+          class="tech-item"
+          title="React"
+        />
+        <img
+          src="images/node.svg"
+          alt="Node.js"
+          class="tech-item"
+          title="Node.js"
+        />
+        <!-- Add additional tech logos as needed -->
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="projects">
+        <!-- Example Project 1 -->
+        <div class="project">
+          <h3>Project One</h3>
+          <p>A brief description of the project goes here.</p>
+          <a class="btn" href="#" target="_blank">View Project</a>
+        </div>
+        <!-- Example Project 2 -->
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>A brief description of the project goes here.</p>
+          <a class="btn" href="#" target="_blank">View Project</a>
+        </div>
+        <!-- Example Project 3 -->
+        <div class="project">
+          <h3>Project Three</h3>
+          <p>A brief description of the project goes here.</p>
+          <a class="btn" href="#" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="margin-top: 1rem">
+        Or connect on
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          style="color: var(--accent-color)"
+          >LinkedIn</a
+        >
+        /
+        <a
+          href="https://github.com"
+          target="_blank"
+          style="color: var(--accent-color)"
+          >GitHub</a
+        >
+      </p>
+    </section>
+
+    <!-- External JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
