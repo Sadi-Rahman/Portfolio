@@ -15,3 +15,10 @@ themeToggleBtn.addEventListener("click", () => {
     localStorage.setItem("theme", "light");
   }
 });
+
+const hamburgerBtn = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburgerBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});

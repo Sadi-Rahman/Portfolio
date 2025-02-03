@@ -17,18 +17,10 @@
   <body>
     <!-- Header with Navigation & Theme Toggle -->
     <header>
-      <div class="logo">
-        <a
-          href="#hero"
-          style="
-            text-decoration: none;
-            color: inherit;
-            font-family: 'Montserrat', sans-serif;
-          "
-          >MyPortfolio</a
-        >
-      </div>
-      <nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <img src="images/bars.svg" alt="Toggle Menu" />
+      </button>
+      <nav id="nav-links">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
@@ -41,10 +33,15 @@
 
     <!-- Hero Section -->
     <section id="hero">
-      <h1>Hello, I'm [Your Name]</h1>
+      <h1>
+        Hello, I'm <br />
+        Md. Abu Bakar Siddique Sadi
+      </h1>
       <p>
-        I am a passionate developer and designer crafting modern and
-        minimalistic digital experiences.
+        I am a passionate developer who loves building intuitive and efficient
+        web applications. Whether it's crafting seamless user experiences,
+        optimizing backend systems with databases and automation, or diving into
+        AI/ML to solve complex problems, I'm always up for the challenge.
       </p>
       <!-- Download Resume Button -->
       <a
@@ -59,10 +56,18 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I specialize in building responsive, user-friendly websites with a focus
+        <!-- I specialize in building responsive, user-friendly websites with a focus
         on clean design and intuitive user experiences. With expertise in HTML,
         CSS, and JavaScript, I bring ideas to life and deliver high-quality
-        digital solutions.
+        digital solutions. -->
+
+        I'm a computer science enthusiast who turns lines of code into exciting
+        digital solutions. My tech world is a playground of React, Python, and
+        machine learning, where I transform complex ideas into user-friendly
+        applications. With a blend of web development skills and AI passion, I'm
+        all about creating technology that solves real-world challenges and
+        makes a meaningful impact. Always curious, always learning, and ready to
+        build something awesome!
       </p>
       <!-- Tech Stack Logos -->
       <div class="tech-stack">
@@ -74,7 +79,7 @@
         />
         <img src="images/css.svg" alt="CSS3" class="tech-item" title="CSS3" />
         <img
-          src="images/javascript.svg"
+          src="images/js.svg"
           alt="JavaScript"
           class="tech-item"
           title="JavaScript"
@@ -90,6 +95,26 @@
           alt="Node.js"
           class="tech-item"
           title="Node.js"
+        />
+        <img
+          src="images/python.svg"
+          alt="Python"
+          class="tech-item"
+          title="Python"
+        />
+        <img
+          src="images/database.svg"
+          alt="SQL"
+          class="tech-item"
+          title="SQL"
+        />
+        <img src="images/java.svg" alt="Java" class="tech-item" title="Java" />
+
+        <img
+          src="images/github.svg"
+          alt="Github"
+          class="tech-item"
+          title="Github"
         />
         <!-- Add additional tech logos as needed -->
       </div>
