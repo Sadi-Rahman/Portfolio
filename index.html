@@ -96,17 +96,18 @@
           class="tech-item"
           title="Node.js"
         />
-        <img
-          src="images/python.svg"
-          alt="Python"
-          class="tech-item"
-          title="Python"
-        />
+
         <img
           src="images/database.svg"
           alt="SQL"
           class="tech-item"
           title="SQL"
+        />
+        <img
+          src="images/python.svg"
+          alt="Python"
+          class="tech-item"
+          title="Python"
         />
         <img src="images/java.svg" alt="Java" class="tech-item" title="Java" />
 
@@ -125,22 +126,34 @@
       <h2>Portfolio</h2>
       <div class="projects">
         <!-- Example Project 1 -->
-        <div class="project">
-          <h3>Project One</h3>
-          <p>A brief description of the project goes here.</p>
-          <a class="btn" href="#" target="_blank">View Project</a>
+        <div
+          class="project"
+          onclick="window.open('https:\\8ht3w3-5173.csb.app', '_blank');"
+          style="cursor: pointer"
+        >
+          <h3>Palette Pal</h3>
+          <p>
+            A React-based web application that generates color palettes based on
+            different themes.
+          </p>
         </div>
         <!-- Example Project 2 -->
-        <div class="project">
+        <div
+          class="project"
+          onclick="location.href='#';"
+          style="cursor: pointer"
+        >
           <h3>Project Two</h3>
           <p>A brief description of the project goes here.</p>
-          <a class="btn" href="#" target="_blank">View Project</a>
         </div>
         <!-- Example Project 3 -->
-        <div class="project">
+        <div
+          class="project"
+          onclick="location.href='#';"
+          style="cursor: pointer"
+        >
           <h3>Project Three</h3>
           <p>A brief description of the project goes here.</p>
-          <a class="btn" href="#" target="_blank">View Project</a>
         </div>
       </div>
     </section>
@@ -148,33 +161,23 @@
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="Your Message"
-          required
-        ></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p style="margin-top: 1rem">
-        Or connect on
+      <div class="contact-links">
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/md-abu-bakar-siddique-sadi-7660aa69/"
           target="_blank"
-          style="color: var(--accent-color)"
-          >LinkedIn</a
         >
-        /
+          <img src="images/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/Sadi-Rahman/" target="_blank">
+          <img src="images/github.png" alt="GitHub" />
+        </a>
         <a
-          href="https://github.com"
+          href="https://mail.google.com/mail/?view=cm&to=sadiakash1309@gmail.com"
           target="_blank"
-          style="color: var(--accent-color)"
-          >GitHub</a
         >
-      </p>
+          <img src="images/gmail (1).png" alt="Gmail" />
+        </a>
+      </div>
     </section>
 
     <!-- External JavaScript -->
