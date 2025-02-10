@@ -18,7 +18,7 @@ body {
 :root {
   --bg-color: #f5f5f5;
   --text-color: #333;
-  --accent-color: #4a90e2;
+  --accent-color: #181e26;
   --header-bg: #ffffff;
   --section-padding: 4rem 1rem;
 }
@@ -26,7 +26,7 @@ body {
 body.dark-mode {
   --bg-color: #1e1e1e;
   --text-color: #e0e0e0;
-  --accent-color: #50bfff;
+  --accent-color: #50bfffb5;
   --header-bg: #2b2b2b;
 }
 
@@ -38,9 +38,13 @@ body.dark-mode .theme-toggle img {
   filter: invert(1);
 }
 
+body.dark-mode .project::before {
+  background: none;
+}
+
 /* Header & Navigation */
 header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -64,7 +68,6 @@ header nav a {
   color: var(--text-color);
   font-weight: 600;
   transition: color 0.3s;
-  /* display: flex; */
   align-items: center;
   height: 40px;
   padding: 0 10px;
@@ -124,6 +127,37 @@ section {
   text-align: center;
 }
 
+/* Fade-in and Fade-out Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
 /* Hero Section */
 #hero {
   background: var(--accent-color);
@@ -140,7 +174,6 @@ section {
   font-size: 1.1rem;
   max-width: 600px;
   margin-bottom: 2rem;
-  /* content: justify; */
   text-align: justify;
 }
 
@@ -184,8 +217,8 @@ section p {
 }
 
 .tech-item {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   transition: transform 0.3s ease;
 }
 
@@ -206,13 +239,74 @@ section p {
 .project {
   background-color: var(--header-bg);
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.833),
+    rgba(194, 226, 244, 0.5)
+  );
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  z-index: 1;
+}
+
+.project:hover::before {
+  opacity: 1;
+}
+
+.project h3 {
+  position: relative;
+  z-index: 2;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.project p {
+  position: relative;
+  z-index: 2;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.project .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.project .tech-tags img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+.project .tech-tags img:hover {
+  opacity: 1;
 }
 
 /* Contact Section */
@@ -290,8 +384,8 @@ section p {
   }
 
   .tech-item {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
   }
 
   .project {
@@ -327,8 +421,8 @@ section p {
   }
 
   .tech-item {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
   }
 
   .project {
@@ -383,8 +477,8 @@ section p {
   }
 
   .tech-item {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
 
   .project {

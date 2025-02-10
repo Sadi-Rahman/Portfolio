@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portfolio</title>
+    <title>Portfolio - Md. Abu Bakar Siddique Sadi</title>
+    <meta
+      name="description"
+      content="Portfolio of Md. Abu Bakar Siddique Sadi, a passionate developer specializing in web applications, AI/ML, and backend systems. My tech world is a playground of React, Python, and machine learning, where I transform complex ideas into user-friendly applications. With a blend of web development skills and AI passion,"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,7 +36,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero" class="fade-out">
       <h1>
         Hello, I'm <br />
         Md. Abu Bakar Siddique Sadi
@@ -48,19 +52,14 @@
         class="btn"
         href="Resume_of_Md_Abu_Bakar_Siddique_Sadi.pdf"
         download="Resume_of_Md_Abu_Bakar_Siddique_Sadi.pdf"
-        >Download Resume</a
+        >Resume</a
       >
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="fade-out">
       <h2>About Me</h2>
       <p>
-        <!-- I specialize in building responsive, user-friendly websites with a focus
-        on clean design and intuitive user experiences. With expertise in HTML,
-        CSS, and JavaScript, I bring ideas to life and deliver high-quality
-        digital solutions. -->
-
         I'm a computer science enthusiast who turns lines of code into exciting
         digital solutions. My tech world is a playground of React, Python, and
         machine learning, where I transform complex ideas into user-friendly
@@ -76,53 +75,69 @@
           alt="HTML5"
           class="tech-item"
           title="HTML5"
+          loading="lazy"
         />
-        <img src="images/css.svg" alt="CSS3" class="tech-item" title="CSS3" />
+        <img
+          src="images/css.svg"
+          alt="CSS3"
+          class="tech-item"
+          title="CSS3"
+          loading="lazy"
+        />
         <img
           src="images/js.svg"
           alt="JavaScript"
           class="tech-item"
           title="JavaScript"
+          loading="lazy"
         />
         <img
           src="images/react.svg"
           alt="React"
           class="tech-item"
           title="React"
+          loading="lazy"
         />
         <img
           src="images/node.svg"
           alt="Node.js"
           class="tech-item"
           title="Node.js"
+          loading="lazy"
         />
-
         <img
           src="images/database.svg"
           alt="SQL"
           class="tech-item"
           title="SQL"
+          loading="lazy"
         />
         <img
           src="images/python.svg"
           alt="Python"
           class="tech-item"
           title="Python"
+          loading="lazy"
         />
-        <img src="images/java.svg" alt="Java" class="tech-item" title="Java" />
-
+        <img
+          src="images/java.svg"
+          alt="Java"
+          class="tech-item"
+          title="Java"
+          loading="lazy"
+        />
         <img
           src="images/github.svg"
           alt="Github"
           class="tech-item"
           title="Github"
+          loading="lazy"
         />
-        <!-- Add additional tech logos as needed -->
       </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
+    <section id="portfolio" class="fade-out">
       <h2>Portfolio</h2>
       <div class="projects">
         <!-- Example Project 1 -->
@@ -155,32 +170,52 @@
           <h3>Project Three</h3>
           <p>A brief description of the project goes here.</p>
         </div>
+
+        <!-- Example Project 4 -->
+        <div
+          class="project"
+          onclick="location.href='#';"
+          style="cursor: pointer"
+        >
+          <h3>Project Four</h3>
+          <p>A brief description of the project goes here.</p>
+        </div>
+
+        <!-- Example Project 5 -->
+        <div
+          class="project"
+          onclick="location.href='#';"
+          style="cursor: pointer"
+        >
+          <h3>Project Five</h3>
+          <p>A brief description of the project goes here.</p>
+        </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="fade-out">
       <h2>Contact Me</h2>
       <div class="contact-links">
         <a
           href="https://www.linkedin.com/in/md-abu-bakar-siddique-sadi-7660aa69/"
           target="_blank"
         >
-          <img src="images/linkedin.png" alt="LinkedIn" />
+          <img src="images/linkedin.png" alt="LinkedIn" loading="lazy" />
         </a>
         <a href="https://github.com/Sadi-Rahman/" target="_blank">
-          <img src="images/github.png" alt="GitHub" />
+          <img src="images/github.png" alt="GitHub" loading="lazy" />
         </a>
         <a
           href="https://mail.google.com/mail/?view=cm&to=sadiakash1309@gmail.com"
           target="_blank"
         >
-          <img src="images/gmail (1).png" alt="Gmail" />
+          <img src="images/gmail (1).png" alt="Gmail" loading="lazy" />
         </a>
       </div>
     </section>
 
     <!-- External JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
