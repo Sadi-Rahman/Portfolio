@@ -433,6 +433,26 @@ body.dark-mode .project:hover::before {
   border: 1px solid var(--accent-color);
 }
 
+#contact .mail-add {
+  font-family: var(--font-body);
+  font-size: 1rem; /* Smaller font size */
+  font-weight: var(--font-weight-medium);
+  color: var(--text-color);
+  background-color: var(--header-bg); /* Changed background color */
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-normal),
+    color var(--transition-normal);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+body.dark-mode #contact .mail-add {
+  background-color: var(--header-bg); /* Adjusted for dark mode */
+  color: var(--text-color);
+}
+
 .contact-links {
   display: flex;
   justify-content: center;
